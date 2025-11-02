@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  background: #fff;
+}
+
+/* Input validation borders */
+.is-invalid {
+  border: 2px solid #e63946 ;
+}
+
+.is-valid {
+  border: 2px solid #4bc55d ;
+}
+
+.input-group-text {
+  background-color: #f1f1f1;
+  font-weight: 600;
+  border-right: none;
+}
+
+.input-group .form-control {
+  border-left: none;
+}
+
+.input-group .form-control:focus {
+  box-shadow: none;
+  border-color: #0d6efd;
+}
+
+.password-conditions {
+  background: #f8f9fa;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 5px;
+  display: none;
+}
+
+.password-conditions ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.password-conditions li {
+  font-size: 0.9rem;
+  color: #e63946; /* red for invalid */
+  margin: 4px 0;
+}
+
+.password-conditions li.valid {
+  color: #2a9d8f; /* green for valid */
+}
+
+.password-conditions li.valid::before {
+  content: "✔ ";
+}
+
+
+/* Error message styling */
+.error-message {
+  color: #e63946;
+  font-size: 0.9rem;
+  margin-top: 3px;
+  display: none;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .card {
+    padding: 20px;
+  }
+  h2 {
+    font-size: medium;
+  }
+}
